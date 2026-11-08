@@ -1,0 +1,70 @@
+<!--{"path": "ocen-partie/", "title": "Oceń partię kombuchy | Kombuczka", "description": "Masz butelkę Kombuczki? Wpisz numer partii z szyjki butelki i napisz, jak smakowała. Możesz pisać anonimowo.", "image": "ocen-butelka.webp"}-->
+
+  <section class="section" style="padding-top:clamp(32px,5vw,64px)">
+    <div class="wrap form-page">
+      <div class="form-aside">
+        <p class="crumbs"><a href="{{R}}">Strona główna</a> › Oceń partię</p>
+        <span class="eyebrow">Oceń partię</span>
+        <h1 style="font-size:var(--fs-h2)">Jak smakowała Twoja Kombuczka?</h1>
+        <p class="lead" style="margin-top:var(--s-4)">To domowa produkcja w małych partiach – każda jest trochę inna. Twoja opinia mówi mi, które smaki i sposoby fermentacji powtarzać.</p>
+        <div class="form-aside__photo">
+          <img src="{{R}}img/ocen-butelka.webp" alt="Butelka Kombuczki na stole w ogrodzie, na szyjce biała naklejka z napisem M2 Firmowa" width="800" height="1000">
+          <span class="hint"><strong>Numer partii</strong> znajdziesz na białej naklejce na szyjce butelki, np. M2.</span>
+        </div>
+      </div>
+
+      <div class="card rate-card">
+        <form id="rate-form" novalidate>
+          <input type="hidden" name="access_key" value="33869884-44e9-4f46-a568-49c580783c7a">
+          <input type="hidden" name="from_name" value="kombuczka.pl – ocena partii">
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="field">
+            <label for="partia">Numer partii</label>
+            <input class="input input--code" id="partia" name="partia" type="text" inputmode="text" autocomplete="off" maxlength="12" placeholder="np. M2, BD4, G1M1" aria-describedby="partia-hint partia-err" required>
+            <p class="hint-text" id="partia-hint">Litery i cyfry z naklejki na szyjce. Nazwy smaku nie musisz wpisywać.</p>
+            <p class="error-text" id="partia-err">Wpisz numer z naklejki – 2 do 12 liter lub cyfr.</p>
+          </div>
+
+          <fieldset class="field field--rating">
+            <legend>Ocena</legend>
+            <div class="rating"><input type="radio" name="ocena" id="o1" value="1" required><label for="o1" data-v="1" style="--c:#D07612">1</label><input type="radio" name="ocena" id="o2" value="2" required><label for="o2" data-v="2" style="--c:#FDCA5D">2</label><input type="radio" name="ocena" id="o3" value="3" required><label for="o3" data-v="3" style="--c:#FFD008">3</label><input type="radio" name="ocena" id="o4" value="4" required><label for="o4" data-v="4" style="--c:#50AE32">4</label><input type="radio" name="ocena" id="o5" value="5" required><label for="o5" data-v="5" style="--c:#1C9838">5</label><span class="rating__desc" id="rating-desc" aria-live="polite"></span></div>
+            <p class="error-text">Wybierz ocenę od 1 do 5.</p>
+          </fieldset>
+
+          <div class="field">
+            <label for="opis">Jak smakowała?</label>
+            <textarea class="textarea" id="opis" name="opis" maxlength="2000" placeholder="Smak, gaz, kwaśność, z czym piłeś, co byś zmienił…" aria-describedby="opis-err" required></textarea>
+            <p class="error-text" id="opis-err">Napisz choć kilka słów.</p>
+          </div>
+
+          <div class="two">
+            <div class="field">
+              <label for="imie">Imię <span class="opt">(opcjonalnie)</span></label>
+              <input class="input" id="imie" name="imie" type="text" autocomplete="given-name" maxlength="60">
+            </div>
+            <div class="field">
+              <label for="email">E-mail <span class="opt">(opcjonalnie)</span></label>
+              <input class="input" id="email" name="email" type="email" autocomplete="email" maxlength="120" aria-describedby="email-hint">
+              <p class="hint-text" id="email-hint">Tylko jeśli chcesz, żebym odpisał.</p>
+              <p class="error-text">Sprawdź adres e-mail.</p>
+            </div>
+          </div>
+
+          <div class="form-foot">
+            <button class="btn btn--primary" type="submit">Wyślij opinię</button>
+            <p>Możesz pisać anonimowo. Opinia trafia tylko do mnie, mailem; nie publikuję jej bez Twojej zgody. Więcej w <a href="{{R}}prywatnosc/">polityce prywatności</a>.</p>
+          </div>
+          <p class="error-text" id="form-error" hidden style="margin-top:var(--s-4)">Nie udało się wysłać. Spróbuj za chwilę albo napisz na kombuczka@gmail.com.</p>
+        </form>
+
+        <div class="success" role="status">
+          <img src="{{R}}img/znak.svg" alt="" width="72" height="70" style="margin:0 auto">
+          <h2>Dziękuję za opinię!</h2>
+          <p class="muted">Czytam każdą. Jeśli zostawiłeś e-mail, odpiszę.</p>
+          <p class="small muted" id="preview-note" hidden>(Podgląd: formularz nie jest jeszcze podłączony, nic nie zostało wysłane.)</p>
+          <a class="btn btn--secondary" href="{{R}}" style="margin-top:var(--s-4)">Wróć na stronę główną</a>
+        </div>
+      </div>
+    </div>
+  </section>

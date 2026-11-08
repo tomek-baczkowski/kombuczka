@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESC}}">
+{{ROBOTS}}
+<link rel="canonical" href="{{CANONICAL}}">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="Kombuczka – Tomek Bączkowski">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{DESC}}">
+<meta property="og:url" content="{{CANONICAL}}">
+<meta property="og:image" content="{{OG_IMAGE}}">
+<meta name="theme-color" content="#FBF7EE">
+<link rel="icon" href="{{R}}img/znak.svg" type="image/svg+xml">
+<link rel="preload" href="{{R}}fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{R}}fonts/fraunces-latin-soft-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{R}}css/style.css">
+{{JSONLD}}
+</head>
+<body data-topic="{{TOPIC}}">
+<a class="skip-link" href="#tresc">Przejdź do treści</a>
+
+<header class="site-header" id="top">
+  <nav class="wrap nav" aria-label="Główne menu">
+    <a class="brand" href="{{R}}" aria-label="Kombuczka – Tomek Bączkowski, strona główna">
+      <img class="brand__mark" src="{{R}}img/znak.svg" alt="" width="46" height="45">
+      <span class="brand__text">
+        <img class="brand__word" src="{{R}}img/wordmark.svg" alt="Kombuczka.pl" width="132" height="11">
+        <span class="brand__name">Tomek Bączkowski</span>
+      </span>
+    </a>
+    <ul class="nav__links">
+      <li><a href="{{R}}oferta/">Oferta</a></li>
+      <li class="has-sub">
+        <button type="button" aria-expanded="false">Dla kogo</button>
+        <ul class="sub">
+          <li><a href="{{R}}dla-firm/">Dla firm</a></li>
+          <li><a href="{{R}}dla-instytucji-kultury/">Dla bibliotek i domów kultury</a></li>
+          <li><a href="{{R}}wydarzenia-o-zdrowiu/">Wydarzenia o zdrowym stylu życia</a></li>
+          <li><a href="{{R}}kombucha-na-wesele/">Kombucha na wesele i wydarzenia</a></li>
+        </ul>
+      </li>
+      <li><a href="{{R}}poradnik/">Poradnik</a></li>
+      <li><a href="{{R}}o-mnie/">O mnie</a></li>
+      <li><a href="{{R}}kontakt/">Kontakt</a></li>
+    </ul>
+    <button class="btn btn--primary btn--nav" type="button" data-ask>Zapytaj o termin</button>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Otwórz menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </nav>
+</header>
+
+<main id="tresc">
+{{CONTENT}}
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <img class="footer__logo" src="{{R}}img/wordmark.svg" alt="Kombuczka.pl" width="150" height="12">
+        <p class="muted small">Wykłady, warsztaty i degustacje kombuchy w całej Polsce. Tomek Bączkowski.</p>
+      </div>
+      <div>
+        <h2 class="footer__h">Oferta</h2>
+        <ul>
+          <li><a href="{{R}}wyklad-o-fermentacji/">Wykład „Fermentacja”</a></li>
+          <li><a href="{{R}}spotkanie-przy-kombuczce/">Spotkanie przy Kombuczce</a></li>
+          <li><a href="{{R}}warsztaty-domowa-kombucha/">Warsztat „Domowa kombucha”</a></li>
+          <li><a href="{{R}}kombucha-na-wesele/">Kombucha na wydarzenia</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer__h">Strona</h2>
+        <ul>
+          <li><a href="{{R}}poradnik/">Poradnik</a></li>
+          <li><a href="{{R}}o-mnie/">O mnie</a></li>
+          <li><a href="{{R}}ocen-partie/">Oceń partię</a></li>
+          <li><a href="{{R}}prywatnosc/">Polityka prywatności</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer__h">Kontakt</h2>
+        <ul>
+          <li><a href="mailto:kombuczka@gmail.com" data-track="email">kombuczka@gmail.com</a></li>
+          <li><a href="https://wa.me/48731550393" data-track="whatsapp">WhatsApp +48 731 550 393</a></li>
+          <li><a href="https://www.facebook.com/kombuczka" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/kombuczka.pl/" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <span>Kombuczka Sp. z o.o., Opolska 27/2, 49-345 Skorogoszcz · NIP 7471931931 · KRS 0001146889 · REGON 540513402</span>
+      <span>© 2026 Kombuczka</span>
+    </div>
+  </div>
+</footer>
+
+<button class="btn btn--primary sticky-cta" type="button" data-ask>Zapytaj o termin</button>
+
+<dialog class="ask" id="ask" aria-labelledby="ask-title">
+  <div class="ask__inner">
+    <button class="ask__close" type="button" aria-label="Zamknij" data-close>×</button>
+    <h2 id="ask-title">Zapytaj o termin</h2>
+    <p class="muted" style="margin:0">Napisz, jakie masz wydarzenie, kiedy i dla ilu osób. Odpowiem z propozycją formatu i ceną.</p>
+    <div class="ask__options">
+      <a class="ask__option" id="ask-mail" href="mailto:kombuczka@gmail.com" data-track="email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>
+        <span><strong>E-mail</strong><span>kombuczka@gmail.com</span></span>
+      </a>
+      <a class="ask__option" id="ask-wa" href="https://wa.me/48731550393" data-track="whatsapp">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8.5 8.5 0 0 1-12.6 7.4L3.5 20l1.2-3.7A8.5 8.5 0 1 1 20 11.5Z"/><path d="M9 8.8c.2 1.9 2.3 4.8 5.2 5.6l1.2-1.2-1.6-1-.9.7c-.9-.4-1.8-1.3-2.2-2.2l.7-.9-1-1.6Z"/></svg>
+        <span><strong>WhatsApp</strong><span>+48 731 550 393</span></span>
+      </a>
+    </div>
+    <p class="small muted" style="margin-bottom:8px">Gotowa wiadomość – wystarczy uzupełnić:</p>
+    <p class="ask__template" id="ask-template"></p>
+    <button class="copy-btn" type="button" id="ask-copy">Kopiuj wiadomość</button>
+  </div>
+</dialog>
+
+<script src="{{R}}js/main.js" defer></script>
+</body>
+</html>

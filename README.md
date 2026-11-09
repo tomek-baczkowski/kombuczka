@@ -18,12 +18,16 @@ Podgląd lokalnie: `python3 build.py && python3 -m http.server -d _site 8000`, p
 Każdy push do gałęzi `main` uruchamia GitHub Actions (`.github/workflows/pages.yml`): budowanie i publikacja na GitHub Pages.
 Jednorazowo w ustawieniach repozytorium: Settings → Pages → Source: **GitHub Actions**.
 
-### Przepięcie domeny kombuczka.pl (gdy strona jest sprawdzona)
+### Domena kombuczka.pl (przepięta 09.11.2026)
 
-1. Dodać plik `src/static/CNAME` z jedną linią: `kombuczka.pl`.
-2. W DNS u rejestratora (cyber_Folks): rekordy A dla `kombuczka.pl` na 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153 oraz CNAME `www` → `tomek-baczkowski.github.io`.
+Zrobione 09.11.2026: plik `src/static/CNAME`, domena w Settings → Pages. DNS jest edytowany w DirectAdmin hostingu cyber_Folks (Edycja strefy DNS), nie w panelu domeny.
+
+1. Plik `src/static/CNAME` z jedną linią: `kombuczka.pl`.
+2. W DNS (cyber_Folks): rekordy A dla `kombuczka.pl` na 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153 oraz CNAME `www` → `tomek-baczkowski.github.io`.
 3. W Settings → Pages wpisać domenę i włączyć „Enforce HTTPS”.
-4. Po sprawdzeniu nowej strony wyłączyć hosting WordPressa w cyber_Folks (domena zostaje).
+4. Po sprawdzeniu nowej strony wyłączyć hosting WordPressa w cyber_Folks (domena zostaje). Uwaga: strefa DNS żyje dziś w tym hostingu – przed jego wyłączeniem przenieść DNS np. na darmowe FreeDNS cyber_Folks i odtworzyć rekordy A i CNAME `www`.
+
+Stare rekordy (do ewentualnego powrotu): A `kombuczka.pl` i A `www` → 185.208.164.69.
 
 ## Formularz „Oceń partię”
 

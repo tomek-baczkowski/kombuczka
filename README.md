@@ -35,4 +35,7 @@ Wysyła przez Web3Forms (darmowy plan, 250 zgłoszeń miesięcznie) na adres ust
 
 ## Analityka
 
-Liczenie kliknięć e-mail i WhatsApp jest przygotowane i wyłączone (`ANALYTICS = false` w `src/static/js/main.js`). Przed włączeniem trzeba zaktualizować politykę prywatności.
+Google Analytics 4 (usługa „kombuczka.pl”, identyfikator `G-GLCD0BFP3B`, konto Google Tomka), od 24.11.2026.
+Skrypt `src/static/js/analityka.js` wczytuje GA4 dopiero po zgodzie odwiedzającego (okienko na dole strony, wybór zapamiętany w przeglądarce; link „Ustawienia statystyk” w stopce otwiera je ponownie). Liczy też kliknięcia e-mail, telefon i WhatsApp jako zdarzenia `kontakt_email`, `kontakt_telefon`, `kontakt_whatsapp`. Opis w polityce prywatności (`prywatnosc.html`). Ten sam plik jest w repozytoriach rowerowy-komprachcice i tomekbaczkowski_pl – zmiany wprowadzać we wszystkich.
+
+Google Search Console: usługa `https://kombuczka.pl/`, weryfikacja plikiem `src/static/google3c1a9864a3aa46fe.html` (nie usuwać), mapa witryny przesłana 24.11.2026.
